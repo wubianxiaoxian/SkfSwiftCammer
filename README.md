@@ -1,6 +1,7 @@
 #### 微博 敲代码的手艺人
 ##### [Blog地址](http://www.cnblogs.com/sunkaifeng/)
-###这是一个自定义相机的demo，在github上面看到的dmeo是用swift写的，我写了一下用oc怎么调用
+###这是一个自定义相机的demo，在github上面看到的demo是用swift写的，我写了一下用oc怎么调用
+### xcode版本要求 7.3
 ##### [原demo地址](https://github.com/AlexLittlejohn/ALCameraViewController)
 ###在oc中调用swift文件方法
    1. 在oc中使用swift文件
