@@ -1,0 +1,16 @@
+//
+//  SkfSwiftCammer-Prefix.pch
+//  SkfSwiftCammer
+//
+//  Created by Kevin Sun on 16/4/13.
+//  Copyright © 2016年 Kevin Sun. All rights reserved.
+//
+
+#ifndef SkfSwiftCammer_Prefix_pch
+#define SkfSwiftCammer_Prefix_pch
+#import "SkfSwiftCammer-Swift.h"
+#import "Masonry.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SkfSwiftCammer_Prefix_pch */

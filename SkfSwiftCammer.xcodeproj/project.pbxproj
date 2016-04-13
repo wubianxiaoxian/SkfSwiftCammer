@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0C6C331CBE129500B4F2BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C6C191CBE129500B4F2BF /* Info.plist */; };
+		0A0C6C341CBE129500B4F2BF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C1B1CBE129500B4F2BF /* MASCompositeConstraint.m */; };
+		0A0C6C351CBE129500B4F2BF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C1E1CBE129500B4F2BF /* MASConstraint.m */; };
+		0A0C6C361CBE129500B4F2BF /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C201CBE129500B4F2BF /* MASConstraintMaker.m */; };
+		0A0C6C371CBE129500B4F2BF /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C221CBE129500B4F2BF /* MASLayoutConstraint.m */; };
+		0A0C6C381CBE129500B4F2BF /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C261CBE129500B4F2BF /* MASViewAttribute.m */; };
+		0A0C6C391CBE129500B4F2BF /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C281CBE129500B4F2BF /* MASViewConstraint.m */; };
+		0A0C6C3A1CBE129500B4F2BF /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C2A1CBE129500B4F2BF /* NSArray+MASAdditions.m */; };
+		0A0C6C3B1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C2D1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		0A0C6C3C1CBE129500B4F2BF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C2F1CBE129500B4F2BF /* View+MASAdditions.m */; };
+		0A0C6C3D1CBE129500B4F2BF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C6C321CBE129500B4F2BF /* ViewController+MASAdditions.m */; };
+		0A949F7D1CBDEB63007F5124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A949F7C1CBDEB63007F5124 /* main.m */; };
+		0A949F801CBDEB63007F5124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A949F7F1CBDEB63007F5124 /* AppDelegate.m */; };
+		0A949F831CBDEB63007F5124 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A949F821CBDEB63007F5124 /* ViewController.m */; };
+		0A949F861CBDEB63007F5124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A949F841CBDEB63007F5124 /* Main.storyboard */; };
+		0A949F881CBDEB63007F5124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A949F871CBDEB63007F5124 /* Assets.xcassets */; };
+		0A949F8B1CBDEB63007F5124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A949F891CBDEB63007F5124 /* LaunchScreen.storyboard */; };
+		0A949F961CBDEB63007F5124 /* SkfSwiftCammerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A949F951CBDEB63007F5124 /* SkfSwiftCammerTests.m */; };
+		0A949FA11CBDEB63007F5124 /* SkfSwiftCammerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FA01CBDEB63007F5124 /* SkfSwiftCammerUITests.m */; };
+		0A949FF91CBDECB2007F5124 /* ALCameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A949FDF1CBDECB2007F5124 /* ALCameraViewAssets.xcassets */; };
+		0A949FFA1CBDECB2007F5124 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A949FE01CBDECB2007F5124 /* CameraView.strings */; };
+		0A949FFB1CBDECB2007F5124 /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE21CBDECB2007F5124 /* CameraGlobals.swift */; };
+		0A949FFC1CBDECB2007F5124 /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE31CBDECB2007F5124 /* CameraShot.swift */; };
+		0A949FFD1CBDECB2007F5124 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE41CBDECB2007F5124 /* ImageExtensions.swift */; };
+		0A949FFE1CBDECB2007F5124 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE51CBDECB2007F5124 /* ImageFetcher.swift */; };
+		0A949FFF1CBDECB2007F5124 /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE61CBDECB2007F5124 /* PhotoLibraryAuthorizer.swift */; };
+		0A94A0001CBDECB2007F5124 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE71CBDECB2007F5124 /* SingleImageFetcher.swift */; };
+		0A94A0011CBDECB2007F5124 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE81CBDECB2007F5124 /* SingleImageSaver.swift */; };
+		0A94A0021CBDECB2007F5124 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FE91CBDECB2007F5124 /* UIButtonExtensions.swift */; };
+		0A94A0031CBDECB2007F5124 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FEA1CBDECB2007F5124 /* Utilities.swift */; };
+		0A94A0041CBDECB2007F5124 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FEB1CBDECB2007F5124 /* VolumeControl.swift */; };
+		0A94A0051CBDECB2007F5124 /* ALCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FEE1CBDECB2007F5124 /* ALCameraViewController.swift */; };
+		0A94A0061CBDECB2007F5124 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FEF1CBDECB2007F5124 /* ConfirmViewController.swift */; };
+		0A94A0071CBDECB2007F5124 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A949FF01CBDECB2007F5124 /* ConfirmViewController.xib */; };
+		0A94A0091CBDECB2007F5124 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FF31CBDECB2007F5124 /* PhotoLibraryViewController.swift */; };
+		0A94A00A1CBDECB2007F5124 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FF51CBDECB2007F5124 /* CameraView.swift */; };
+		0A94A00B1CBDECB2007F5124 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FF61CBDECB2007F5124 /* CropOverlay.swift */; };
+		0A94A00C1CBDECB2007F5124 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FF71CBDECB2007F5124 /* ImageCell.swift */; };
+		0A94A00D1CBDECB2007F5124 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949FF81CBDECB2007F5124 /* PermissionsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A949F921CBDEB63007F5124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A949F701CBDEB63007F5124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A949F771CBDEB63007F5124;
+			remoteInfo = SkfSwiftCammer;
+		};
+		0A949F9D1CBDEB63007F5124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A949F701CBDEB63007F5124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A949F771CBDEB63007F5124;
+			remoteInfo = SkfSwiftCammer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0C6C171CBDEDFB00B4F2BF /* SkfSwiftCammer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkfSwiftCammer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		0A0C6C191CBE129500B4F2BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0C6C1A1CBE129500B4F2BF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		0A0C6C1B1CBE129500B4F2BF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		0A0C6C1C1CBE129500B4F2BF /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		0A0C6C1D1CBE129500B4F2BF /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		0A0C6C1E1CBE129500B4F2BF /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		0A0C6C1F1CBE129500B4F2BF /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		0A0C6C201CBE129500B4F2BF /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		0A0C6C211CBE129500B4F2BF /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		0A0C6C221CBE129500B4F2BF /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		0A0C6C231CBE129500B4F2BF /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		0A0C6C241CBE129500B4F2BF /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		0A0C6C251CBE129500B4F2BF /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		0A0C6C261CBE129500B4F2BF /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		0A0C6C271CBE129500B4F2BF /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		0A0C6C281CBE129500B4F2BF /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		0A0C6C291CBE129500B4F2BF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C2A1CBE129500B4F2BF /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		0A0C6C2B1CBE129500B4F2BF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C2C1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C2D1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		0A0C6C2E1CBE129500B4F2BF /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C2F1CBE129500B4F2BF /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		0A0C6C301CBE129500B4F2BF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C311CBE129500B4F2BF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		0A0C6C321CBE129500B4F2BF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		0A949F781CBDEB63007F5124 /* SkfSwiftCammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkfSwiftCammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A949F7C1CBDEB63007F5124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A949F7E1CBDEB63007F5124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A949F7F1CBDEB63007F5124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A949F811CBDEB63007F5124 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A949F821CBDEB63007F5124 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A949F851CBDEB63007F5124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A949F871CBDEB63007F5124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A949F8A1CBDEB63007F5124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A949F8C1CBDEB63007F5124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A949F911CBDEB63007F5124 /* SkfSwiftCammerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkfSwiftCammerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A949F951CBDEB63007F5124 /* SkfSwiftCammerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkfSwiftCammerTests.m; sourceTree = "<group>"; };
+		0A949F971CBDEB63007F5124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A949F9C1CBDEB63007F5124 /* SkfSwiftCammerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkfSwiftCammerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A949FA01CBDEB63007F5124 /* SkfSwiftCammerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkfSwiftCammerUITests.m; sourceTree = "<group>"; };
+		0A949FA21CBDEB63007F5124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A949FDF1CBDECB2007F5124 /* ALCameraViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ALCameraViewAssets.xcassets; sourceTree = "<group>"; };
+		0A949FE01CBDECB2007F5124 /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
+		0A949FE21CBDECB2007F5124 /* CameraGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraGlobals.swift; sourceTree = "<group>"; };
+		0A949FE31CBDECB2007F5124 /* CameraShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShot.swift; sourceTree = "<group>"; };
+		0A949FE41CBDECB2007F5124 /* ImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		0A949FE51CBDECB2007F5124 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		0A949FE61CBDECB2007F5124 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		0A949FE71CBDECB2007F5124 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageFetcher.swift; sourceTree = "<group>"; };
+		0A949FE81CBDECB2007F5124 /* SingleImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageSaver.swift; sourceTree = "<group>"; };
+		0A949FE91CBDECB2007F5124 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		0A949FEA1CBDECB2007F5124 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0A949FEB1CBDECB2007F5124 /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		0A949FED1CBDECB2007F5124 /* ALCameraViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A949FEE1CBDECB2007F5124 /* ALCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCameraViewController.swift; sourceTree = "<group>"; };
+		0A949FEF1CBDECB2007F5124 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		0A949FF01CBDECB2007F5124 /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		0A949FF31CBDECB2007F5124 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		0A949FF51CBDECB2007F5124 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		0A949FF61CBDECB2007F5124 /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		0A949FF71CBDECB2007F5124 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		0A949FF81CBDECB2007F5124 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A949F751CBDEB63007F5124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F8E1CBDEB63007F5124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F991CBDEB63007F5124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0C6C181CBE129500B4F2BF /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C6C191CBE129500B4F2BF /* Info.plist */,
+				0A0C6C1A1CBE129500B4F2BF /* MASCompositeConstraint.h */,
+				0A0C6C1B1CBE129500B4F2BF /* MASCompositeConstraint.m */,
+				0A0C6C1C1CBE129500B4F2BF /* MASConstraint+Private.h */,
+				0A0C6C1D1CBE129500B4F2BF /* MASConstraint.h */,
+				0A0C6C1E1CBE129500B4F2BF /* MASConstraint.m */,
+				0A0C6C1F1CBE129500B4F2BF /* MASConstraintMaker.h */,
+				0A0C6C201CBE129500B4F2BF /* MASConstraintMaker.m */,
+				0A0C6C211CBE129500B4F2BF /* MASLayoutConstraint.h */,
+				0A0C6C221CBE129500B4F2BF /* MASLayoutConstraint.m */,
+				0A0C6C231CBE129500B4F2BF /* Masonry.h */,
+				0A0C6C241CBE129500B4F2BF /* MASUtilities.h */,
+				0A0C6C251CBE129500B4F2BF /* MASViewAttribute.h */,
+				0A0C6C261CBE129500B4F2BF /* MASViewAttribute.m */,
+				0A0C6C271CBE129500B4F2BF /* MASViewConstraint.h */,
+				0A0C6C281CBE129500B4F2BF /* MASViewConstraint.m */,
+				0A0C6C291CBE129500B4F2BF /* NSArray+MASAdditions.h */,
+				0A0C6C2A1CBE129500B4F2BF /* NSArray+MASAdditions.m */,
+				0A0C6C2B1CBE129500B4F2BF /* NSArray+MASShorthandAdditions.h */,
+				0A0C6C2C1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.h */,
+				0A0C6C2D1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.m */,
+				0A0C6C2E1CBE129500B4F2BF /* View+MASAdditions.h */,
+				0A0C6C2F1CBE129500B4F2BF /* View+MASAdditions.m */,
+				0A0C6C301CBE129500B4F2BF /* View+MASShorthandAdditions.h */,
+				0A0C6C311CBE129500B4F2BF /* ViewController+MASAdditions.h */,
+				0A0C6C321CBE129500B4F2BF /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		0A949F6F1CBDEB63007F5124 = {
+			isa = PBXGroup;
+			children = (
+				0A949F7A1CBDEB63007F5124 /* SkfSwiftCammer */,
+				0A949F941CBDEB63007F5124 /* SkfSwiftCammerTests */,
+				0A949F9F1CBDEB63007F5124 /* SkfSwiftCammerUITests */,
+				0A949F791CBDEB63007F5124 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A949F791CBDEB63007F5124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A949F781CBDEB63007F5124 /* SkfSwiftCammer.app */,
+				0A949F911CBDEB63007F5124 /* SkfSwiftCammerTests.xctest */,
+				0A949F9C1CBDEB63007F5124 /* SkfSwiftCammerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A949F7A1CBDEB63007F5124 /* SkfSwiftCammer */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C6C181CBE129500B4F2BF /* Masonry */,
+				0A949F7E1CBDEB63007F5124 /* AppDelegate.h */,
+				0A949F7F1CBDEB63007F5124 /* AppDelegate.m */,
+				0A949F811CBDEB63007F5124 /* ViewController.h */,
+				0A949F821CBDEB63007F5124 /* ViewController.m */,
+				0A949F841CBDEB63007F5124 /* Main.storyboard */,
+				0A949FDE1CBDECB2007F5124 /* ALCameraViewController */,
+				0A949F871CBDEB63007F5124 /* Assets.xcassets */,
+				0A949F891CBDEB63007F5124 /* LaunchScreen.storyboard */,
+				0A949F8C1CBDEB63007F5124 /* Info.plist */,
+				0A949F7B1CBDEB63007F5124 /* Supporting Files */,
+			);
+			path = SkfSwiftCammer;
+			sourceTree = "<group>";
+		};
+		0A949F7B1CBDEB63007F5124 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C6C171CBDEDFB00B4F2BF /* SkfSwiftCammer-Prefix.pch */,
+				0A949F7C1CBDEB63007F5124 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A949F941CBDEB63007F5124 /* SkfSwiftCammerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A949F951CBDEB63007F5124 /* SkfSwiftCammerTests.m */,
+				0A949F971CBDEB63007F5124 /* Info.plist */,
+			);
+			path = SkfSwiftCammerTests;
+			sourceTree = "<group>";
+		};
+		0A949F9F1CBDEB63007F5124 /* SkfSwiftCammerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A949FA01CBDEB63007F5124 /* SkfSwiftCammerUITests.m */,
+				0A949FA21CBDEB63007F5124 /* Info.plist */,
+			);
+			path = SkfSwiftCammerUITests;
+			sourceTree = "<group>";
+		};
+		0A949FDE1CBDECB2007F5124 /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A949FDF1CBDECB2007F5124 /* ALCameraViewAssets.xcassets */,
+				0A949FE01CBDECB2007F5124 /* CameraView.strings */,
+				0A949FE11CBDECB2007F5124 /* Utilities */,
+				0A949FEC1CBDECB2007F5124 /* ViewController */,
+				0A949FF41CBDECB2007F5124 /* Views */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		0A949FE11CBDECB2007F5124 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0A949FE21CBDECB2007F5124 /* CameraGlobals.swift */,
+				0A949FE31CBDECB2007F5124 /* CameraShot.swift */,
+				0A949FE41CBDECB2007F5124 /* ImageExtensions.swift */,
+				0A949FE51CBDECB2007F5124 /* ImageFetcher.swift */,
+				0A949FE61CBDECB2007F5124 /* PhotoLibraryAuthorizer.swift */,
+				0A949FE71CBDECB2007F5124 /* SingleImageFetcher.swift */,
+				0A949FE81CBDECB2007F5124 /* SingleImageSaver.swift */,
+				0A949FE91CBDECB2007F5124 /* UIButtonExtensions.swift */,
+				0A949FEA1CBDECB2007F5124 /* Utilities.swift */,
+				0A949FEB1CBDECB2007F5124 /* VolumeControl.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0A949FEC1CBDECB2007F5124 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A949FED1CBDECB2007F5124 /* ALCameraViewController-Bridging-Header.h */,
+				0A949FEE1CBDECB2007F5124 /* ALCameraViewController.swift */,
+				0A949FEF1CBDECB2007F5124 /* ConfirmViewController.swift */,
+				0A949FF01CBDECB2007F5124 /* ConfirmViewController.xib */,
+				0A949FF31CBDECB2007F5124 /* PhotoLibraryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0A949FF41CBDECB2007F5124 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A949FF51CBDECB2007F5124 /* CameraView.swift */,
+				0A949FF61CBDECB2007F5124 /* CropOverlay.swift */,
+				0A949FF71CBDECB2007F5124 /* ImageCell.swift */,
+				0A949FF81CBDECB2007F5124 /* PermissionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A949F771CBDEB63007F5124 /* SkfSwiftCammer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A949FA51CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammer" */;
+			buildPhases = (
+				0A949F741CBDEB63007F5124 /* Sources */,
+				0A949F751CBDEB63007F5124 /* Frameworks */,
+				0A949F761CBDEB63007F5124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkfSwiftCammer;
+			productName = SkfSwiftCammer;
+			productReference = 0A949F781CBDEB63007F5124 /* SkfSwiftCammer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A949F901CBDEB63007F5124 /* SkfSwiftCammerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A949FA81CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammerTests" */;
+			buildPhases = (
+				0A949F8D1CBDEB63007F5124 /* Sources */,
+				0A949F8E1CBDEB63007F5124 /* Frameworks */,
+				0A949F8F1CBDEB63007F5124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A949F931CBDEB63007F5124 /* PBXTargetDependency */,
+			);
+			name = SkfSwiftCammerTests;
+			productName = SkfSwiftCammerTests;
+			productReference = 0A949F911CBDEB63007F5124 /* SkfSwiftCammerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A949F9B1CBDEB63007F5124 /* SkfSwiftCammerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A949FAB1CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammerUITests" */;
+			buildPhases = (
+				0A949F981CBDEB63007F5124 /* Sources */,
+				0A949F991CBDEB63007F5124 /* Frameworks */,
+				0A949F9A1CBDEB63007F5124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A949F9E1CBDEB63007F5124 /* PBXTargetDependency */,
+			);
+			name = SkfSwiftCammerUITests;
+			productName = SkfSwiftCammerUITests;
+			productReference = 0A949F9C1CBDEB63007F5124 /* SkfSwiftCammerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A949F701CBDEB63007F5124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kevin Sun";
+				TargetAttributes = {
+					0A949F771CBDEB63007F5124 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					0A949F901CBDEB63007F5124 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0A949F771CBDEB63007F5124;
+					};
+					0A949F9B1CBDEB63007F5124 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0A949F771CBDEB63007F5124;
+					};
+				};
+			};
+			buildConfigurationList = 0A949F731CBDEB63007F5124 /* Build configuration list for PBXProject "SkfSwiftCammer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A949F6F1CBDEB63007F5124;
+			productRefGroup = 0A949F791CBDEB63007F5124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A949F771CBDEB63007F5124 /* SkfSwiftCammer */,
+				0A949F901CBDEB63007F5124 /* SkfSwiftCammerTests */,
+				0A949F9B1CBDEB63007F5124 /* SkfSwiftCammerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A949F761CBDEB63007F5124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A949F8B1CBDEB63007F5124 /* LaunchScreen.storyboard in Resources */,
+				0A949F881CBDEB63007F5124 /* Assets.xcassets in Resources */,
+				0A949FFA1CBDECB2007F5124 /* CameraView.strings in Resources */,
+				0A949F861CBDEB63007F5124 /* Main.storyboard in Resources */,
+				0A949FF91CBDECB2007F5124 /* ALCameraViewAssets.xcassets in Resources */,
+				0A94A0071CBDECB2007F5124 /* ConfirmViewController.xib in Resources */,
+				0A0C6C331CBE129500B4F2BF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F8F1CBDEB63007F5124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F9A1CBDEB63007F5124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A949F741CBDEB63007F5124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94A0061CBDECB2007F5124 /* ConfirmViewController.swift in Sources */,
+				0A949FFC1CBDECB2007F5124 /* CameraShot.swift in Sources */,
+				0A94A0001CBDECB2007F5124 /* SingleImageFetcher.swift in Sources */,
+				0A94A00A1CBDECB2007F5124 /* CameraView.swift in Sources */,
+				0A0C6C371CBE129500B4F2BF /* MASLayoutConstraint.m in Sources */,
+				0A94A0051CBDECB2007F5124 /* ALCameraViewController.swift in Sources */,
+				0A949F831CBDEB63007F5124 /* ViewController.m in Sources */,
+				0A94A00B1CBDECB2007F5124 /* CropOverlay.swift in Sources */,
+				0A949F801CBDEB63007F5124 /* AppDelegate.m in Sources */,
+				0A949FFF1CBDECB2007F5124 /* PhotoLibraryAuthorizer.swift in Sources */,
+				0A0C6C381CBE129500B4F2BF /* MASViewAttribute.m in Sources */,
+				0A94A00C1CBDECB2007F5124 /* ImageCell.swift in Sources */,
+				0A0C6C361CBE129500B4F2BF /* MASConstraintMaker.m in Sources */,
+				0A0C6C3C1CBE129500B4F2BF /* View+MASAdditions.m in Sources */,
+				0A0C6C391CBE129500B4F2BF /* MASViewConstraint.m in Sources */,
+				0A0C6C341CBE129500B4F2BF /* MASCompositeConstraint.m in Sources */,
+				0A94A0091CBDECB2007F5124 /* PhotoLibraryViewController.swift in Sources */,
+				0A949FFD1CBDECB2007F5124 /* ImageExtensions.swift in Sources */,
+				0A94A0041CBDECB2007F5124 /* VolumeControl.swift in Sources */,
+				0A94A0031CBDECB2007F5124 /* Utilities.swift in Sources */,
+				0A94A0021CBDECB2007F5124 /* UIButtonExtensions.swift in Sources */,
+				0A0C6C351CBE129500B4F2BF /* MASConstraint.m in Sources */,
+				0A949FFE1CBDECB2007F5124 /* ImageFetcher.swift in Sources */,
+				0A94A0011CBDECB2007F5124 /* SingleImageSaver.swift in Sources */,
+				0A0C6C3B1CBE129500B4F2BF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0A0C6C3A1CBE129500B4F2BF /* NSArray+MASAdditions.m in Sources */,
+				0A0C6C3D1CBE129500B4F2BF /* ViewController+MASAdditions.m in Sources */,
+				0A949F7D1CBDEB63007F5124 /* main.m in Sources */,
+				0A94A00D1CBDECB2007F5124 /* PermissionsView.swift in Sources */,
+				0A949FFB1CBDECB2007F5124 /* CameraGlobals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F8D1CBDEB63007F5124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A949F961CBDEB63007F5124 /* SkfSwiftCammerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A949F981CBDEB63007F5124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A949FA11CBDEB63007F5124 /* SkfSwiftCammerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A949F931CBDEB63007F5124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A949F771CBDEB63007F5124 /* SkfSwiftCammer */;
+			targetProxy = 0A949F921CBDEB63007F5124 /* PBXContainerItemProxy */;
+		};
+		0A949F9E1CBDEB63007F5124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A949F771CBDEB63007F5124 /* SkfSwiftCammer */;
+			targetProxy = 0A949F9D1CBDEB63007F5124 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A949F841CBDEB63007F5124 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A949F851CBDEB63007F5124 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A949F891CBDEB63007F5124 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A949F8A1CBDEB63007F5124 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A949FA31CBDEB63007F5124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A949FA41CBDEB63007F5124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A949FA61CBDEB63007F5124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkfSwiftCammer-Prefix.pch";
+				INFOPLIST_FILE = SkfSwiftCammer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A949FA71CBDEB63007F5124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkfSwiftCammer-Prefix.pch";
+				INFOPLIST_FILE = SkfSwiftCammer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A949FA91CBDEB63007F5124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkfSwiftCammerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkfSwiftCammer.app/SkfSwiftCammer";
+			};
+			name = Debug;
+		};
+		0A949FAA1CBDEB63007F5124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkfSwiftCammerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkfSwiftCammer.app/SkfSwiftCammer";
+			};
+			name = Release;
+		};
+		0A949FAC1CBDEB63007F5124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkfSwiftCammerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkfSwiftCammer;
+			};
+			name = Debug;
+		};
+		0A949FAD1CBDEB63007F5124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SkfSwiftCammerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.SkfSwiftCammerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkfSwiftCammer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A949F731CBDEB63007F5124 /* Build configuration list for PBXProject "SkfSwiftCammer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A949FA31CBDEB63007F5124 /* Debug */,
+				0A949FA41CBDEB63007F5124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A949FA51CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A949FA61CBDEB63007F5124 /* Debug */,
+				0A949FA71CBDEB63007F5124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A949FA81CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A949FA91CBDEB63007F5124 /* Debug */,
+				0A949FAA1CBDEB63007F5124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A949FAB1CBDEB63007F5124 /* Build configuration list for PBXNativeTarget "SkfSwiftCammerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A949FAC1CBDEB63007F5124 /* Debug */,
+				0A949FAD1CBDEB63007F5124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A949F701CBDEB63007F5124 /* Project object */;
+}
