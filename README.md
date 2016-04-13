@@ -13,7 +13,7 @@
    3. 在预编译文件PrefixHeader.pch中 添加 #import ‘项目名-Swift.h")
    4. 然后就可以在oc中使用swift的类了
 ###截图
-
+ ![](https://github.com/wubianxiaoxian/SkfSwiftCammer/blob/master/Kgif.gif)
  ![](http://i2.piimg.com/b25809caa8f2ed37.png)
  ![](http://i2.piimg.com/c039b48e0c753202.png)
  ![](http://i2.piimg.com/9556decd6c16d797.png)
