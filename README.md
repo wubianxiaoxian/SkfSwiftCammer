@@ -4,10 +4,10 @@
 ### xcode版本要求 7.3
 ##### [原demo地址](https://github.com/AlexLittlejohn/ALCameraViewController)
 ###在oc中调用swift文件方法
-   1. 在oc中使用swift文件
-   2. 创建全局编译文件 PrefixHeader.pch
-   3. 在全局预编译文件PrefixHeader.pch中 #import ‘项目名-Swift.h")
-   4. 现在就可以在oc中使用swift了
+   1. 在工程中导入swift的类
+   2. 创建全局预编译文件 PrefixHeader.pch
+   3. 在预编译文件PrefixHeader.pch中 添加 #import ‘项目名-Swift.h")
+   4. 然后就可以在oc中使用swift的类了
 ###截图
 
  ![](http://i2.piimg.com/b25809caa8f2ed37.png)
