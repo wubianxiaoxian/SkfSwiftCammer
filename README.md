@@ -8,6 +8,7 @@
    3. 在全局预编译文件PrefixHeader.pch中 #import ‘项目名-Swift.h")
    4. 现在就可以在oc中使用swift了
 ###截图
+
  ![](http://i2.piimg.com/b25809caa8f2ed37.png)
  ![](http://i2.piimg.com/c039b48e0c753202.png)
  ![](http://i2.piimg.com/9556decd6c16d797.png)
